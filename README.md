@@ -20,7 +20,7 @@ verifying purchase
 ```python
 from google_purchase import GooglePurchaseProduct
 
-google_inapp = GooglePurchaseProduct("google api.json")
+google_purchase = GooglePurchaseProduct("google api.json")
 
 package_name = "com.example.app"
 product_id = "first_product"
