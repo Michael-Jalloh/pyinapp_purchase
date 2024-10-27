@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md')) as f:
 setup(
     name= "pyinapp_purchase",
     packages= ["google_purchase"],
-    version= "0.0.4",
+    version= "0.0.5",
     license= "MIT",
     description= "pyinapp_purchase is an open-source Python library designed to simplify and securely validate in-app purchase tokens server side.",
     author= "Michael Jalloh",
