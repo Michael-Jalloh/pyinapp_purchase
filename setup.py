@@ -7,8 +7,8 @@ with open(path.join(this_directory, 'README.md')) as f:
 
 setup(
     name= "pyinapp_purchase",
-    packages= ["pyinapp_purchase", "google_purchase_verifier"],
-    version= "0.0.1",
+    packages= ["google_purchase"],
+    version= "0.0.4",
     license= "MIT",
     description= "pyinapp_purchase is an open-source Python library designed to simplify and securely validate in-app purchase tokens server side.",
     author= "Michael Jalloh",
@@ -20,16 +20,13 @@ setup(
     install_requires=[
         "PyJWT",
         "requests",
+        "cryptography"
     ],
     classifiers= [
         "Development Status :: 3 - Alpha",      
         "Intended Audience :: Developers",      
         "Topic :: Software Development :: Build Tools",
-        "Topic :: Inapp Purchase",
-        "License :: OSI Approved :: MIT License",   
-        "Programming Language :: Python :: 3",   
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
@@ -43,5 +40,5 @@ setup(
         "issues": "https://github.com/Michael-Jalloh/pyinapp_purchase/issues",
         "source": "https://github.com/Michael-Jalloh/pyinapp_purchase"
     },
-    package_dir="src",
+    package_dir={"google_purchase": "src/google_purchase"},
 )

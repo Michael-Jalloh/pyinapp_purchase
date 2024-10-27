@@ -1,11 +1,11 @@
-class GoggleResponse(object):
+class GoogleResponse(object):
     def __init__(self, data) -> None:
         self.data = data
     
     def __str__(self) -> str:
         return f"GoogleResponse -> {self.data}"
 
-class GogglePurrchaseResponse(object):
+class GooglePurchaseResponse(object):
     def __init__(self, data: dict) -> None:
         self.data = data
         self.kind = data.get("kind","")
